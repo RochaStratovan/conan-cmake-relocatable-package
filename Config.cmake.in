@@ -1,0 +1,6 @@
+@PACKAGE_INIT@
+
+message(STATUS "Package @MY_PKG_BASE@ found at ${PACKAGE_PREFIX_DIR}")
+
+include("${CMAKE_CURRENT_LIST_DIR}/@MY_PKG_BASE@Targets.cmake")
+check_required_components("@MY_PKG_BASE@")
